@@ -668,6 +668,12 @@ button span {
         font-size: 15px;
     }
 
+    /*? Ventana */
+    .button-ventana {
+        top: -10px;
+        left: 480px;
+    }
+
     /*? Footer */
     .footer__button {
         width: 40%;
@@ -693,5 +699,9 @@ button span {
     .modal {
         width: 80vw;
         height: 80vh;
+    }
+
+    .img__ventana {
+        width: 80%;
     }
 }
