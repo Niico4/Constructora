@@ -655,6 +655,43 @@ button span {
     .card {
         height: 500px;
     }
+}
 
+@media (min-width: 768px) {
+    /** Buttons */
+    /*? Navbar */
+    .btn{
+        width: 15rem;
+    }
 
+    strong {
+        font-size: 15px;
+    }
+
+    /*? Footer */
+    .footer__button {
+        width: 40%;
+    }
+
+    /** Header */
+    .section-header__title {
+        font-size: 3rem;
+    }
+
+    /** Main */
+    .main__title {
+        font-size: 2rem;
+    }
+
+    /*? Card */
+    .card {
+        width: 60%;
+        height: 450px;
+    }
+
+    /** Ventana Emergente */
+    .modal {
+        width: 80vw;
+        height: 80vh;
+    }
 }
