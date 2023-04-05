@@ -725,3 +725,62 @@ button span {
         width: 80%;
     }
 }
+
+@media (max-width: 599px) {
+
+    /** Buttons */
+    /*? Navbar */
+    .btn {
+        width: 10rem;
+    }
+
+    /*? Ventana */
+    .button-ventana {
+        top: 10px;
+        left: 280px;
+        transform: rotate(35deg);
+    }
+
+    /*? Footer */
+    .footer__button {
+        width: 60%;
+    }
+
+    /** Header */
+    .section-header__logo {
+        width: 200px;
+    }
+
+    .section-header__title {
+        font-size: 2rem;
+    }
+
+    /** Main */
+    .main__title {
+        font-size: 1.5rem;
+    }
+
+    /*? Card */
+    .card {
+        width: 100%;
+    }
+
+    /** Ventana Emergente */
+    .modal {
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .img__ventana {
+        width: 80%;
+    }
+
+    /*? Section Primary */
+    .cta{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 479px) {
+    /*! TERMINAAR */
+}
