@@ -527,3 +527,22 @@ strong {
 .cta-inicio:active {
     transform: scale(0.95);
 }
+
+
+ @media (max-width: 1336px)  {
+    
+    
+    .header {
+       
+        height: 40vh;
+        
+    }
+    
+    .card {
+        width: 30%;
+        height: 500px;
+        
+    }
+
+
+}
