@@ -647,11 +647,13 @@ button span {
 /** Media Queries */
 
 @media (max-width: 1336px) {
-
+    /** Header */
     .header {
         height: 40vh;
     }
 
+    /** Main */
+    /*? Card */
     .card {
         height: 500px;
     }
