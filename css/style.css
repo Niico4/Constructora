@@ -646,23 +646,41 @@ button span {
 
 /** Media Queries */
 
-@media (max-width: 1336px) {
-    /** Header */
+@media (max-width: 1366px) {
+
+    /** Buttons */
+    /*? Card */
+    .card__button {
+        font-size: 12px;
+        width: 60%;
+    }
+
+    /** header */
     .header {
-        height: 40vh;
+        height: 41vh;
     }
 
     /** Main */
-    /*? Card */
+    /*? Cards */
     .card {
         height: 500px;
+    }
+
+    /** ventana emergente */
+    .modal {
+        height: 600px;
+    }
+
+    .img__ventana {
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 768px) {
+
     /** Buttons */
     /*? Navbar */
-    .btn{
+    .btn {
         width: 15rem;
     }
 
