@@ -685,13 +685,9 @@ button span {
     .section-primary__text{
         font-size: 13px;
     }
-}
 
-
-@media (max-width: 1024px) {
-
-    /* ventana emergente */
-    .modal {   
+     /* ventana emergente */
+     .modal {   
         width: 800px;
     }
     .modal h1{
@@ -699,6 +695,21 @@ button span {
     }
     .button-ventana{
         left: 690px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+
+    /* ventana emergente */
+    .modal {   
+        width: 700px;
+    }
+    .modal h1{
+        font-size: 2rem;
+    }
+    .button-ventana{
+        left: 590px;
     }
     /* card */
     .card__button {
