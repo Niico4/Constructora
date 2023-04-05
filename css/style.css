@@ -497,10 +497,10 @@ strong {
     color: #b1dae7;
 }
 
-.cta-inicio span:hover{
+.cta-inicio span:hover {
     color: #000000;
     transition: all 0.5s ease;
-} 
+}
 
 .cta-inicio svg {
     position: relative;
@@ -528,20 +528,132 @@ strong {
     transform: scale(0.95);
 }
 
+/** Ventana Emergente */
+.modal-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle at 99% 33%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 37%, transparent 37%, transparent 100%), radial-gradient(circle at 46% 16%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 43%, transparent 43%, transparent 100%), radial-gradient(circle at 99% 25%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), radial-gradient(circle at 57% 88%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 86%, transparent 86%, transparent 100%), radial-gradient(circle at 82% 78%, hsla(235, 0%, 48%, 0.03) 0%, hsla(235, 0%, 48%, 0.03) 22%, transparent 22%, transparent 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.855), rgba(0, 0, 0, 0.855));
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
 
- @media (max-width: 1336px)  {
-    
-    
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    max-width: 100%;
+    height: 800px;
+    padding: 30px 50px;
+    background-image: linear-gradient(135deg, transparent 0%, transparent 50%, rgba(168, 0, 0, 0.07) 50%, rgba(168, 0, 0, 0.07) 77%, transparent 77%, transparent 100%), linear-gradient(90deg, transparent 0%, transparent 91%, rgba(168, 0, 0, 0.07) 91%, rgba(168, 0, 0, 0.07) 99%, transparent 99%, transparent 100%), linear-gradient(135deg, transparent 0%, transparent 24%, rgba(168, 0, 0, 0.07) 24%, rgba(168, 0, 0, 0.07) 63%, transparent 63%, transparent 100%), linear-gradient(0deg, transparent 0%, transparent 49%, rgba(168, 0, 0, 0.07) 49%, rgba(168, 0, 0, 0.07) 63%, transparent 63%, transparent 100%), linear-gradient(90deg, rgba(0, 0, 0, 0.926), rgba(0, 0, 0, 0.947));
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.modal h1 {
+    font-size: 3rem;
+}
+
+.text__ventana {
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.img__ventana {
+    width: 60%;
+    object-fit: cover;
+}
+
+/*? Button */
+.button-ventana {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    background: #e62222;
+    top: -20px;
+    left: 880px;
+}
+
+.button-ventana,
+button span {
+    transition: 200ms;
+}
+
+.button-ventana .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+
+.button-ventana .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-ventana svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.button-ventana:hover {
+    background: #ff3636;
+}
+
+.button-ventana:hover .text {
+    color: transparent;
+}
+
+.button-ventana:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.button-ventana:focus {
+    outline: none;
+}
+
+.button-ventana:active .icon svg {
+    transform: scale(0.8);
+}
+
+/** Media Queries */
+
+@media (max-width: 1336px) {
+
     .header {
-       
         height: 40vh;
-        
     }
-    
+
     .card {
-      
         height: 500px;
-        
     }
 
 
