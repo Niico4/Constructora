@@ -472,14 +472,16 @@ button span {
 }
 
 /*? Section Primary */
-.section-primary {
+.section-primary,
+.section-primary2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.section-primary__title {
+.section-primary__title,
+.section-primary2__title {
     text-align: center;
     margin-bottom: 1em;
     color: var(--black);
@@ -487,7 +489,8 @@ button span {
     font-weight: 400;
 }
 
-.section-primary__text {
+.section-primary__text,
+.section-primary2__text {
     color: var(--black);
     font-weight: 600;
     text-align: justify;
@@ -496,6 +499,14 @@ button span {
 
 .cta {
     color: var(--black);
+}
+
+/*? Section Primary2 */
+
+.section-primary2,
+.section-primary2__text,
+.section-primary2__title {
+    color: var(--white);
 }
 
 /** Footer */
@@ -646,7 +657,7 @@ button span {
 
 /** Media Queries */
 
-@media  (max-width: 1450px ){
+@media (max-width: 1450px) {
 
     /** Buttons */
     /*? Card */
@@ -679,21 +690,23 @@ button span {
 
 
 @media (max-width: 1210px) {
-  
+
     /* card */
 
-    .section-primary__text{
+    .section-primary__text {
         font-size: 13px;
     }
 
-     /* ventana emergente */
-     .modal {   
+    /* ventana emergente */
+    .modal {
         width: 800px;
     }
-    .modal h1{
+
+    .modal h1 {
         font-size: 2rem;
     }
-    .button-ventana{
+
+    .button-ventana {
         left: 690px;
     }
 }
@@ -702,25 +715,28 @@ button span {
 @media (max-width: 1024px) {
 
     /* ventana emergente */
-    .modal {   
+    .modal {
         width: 700px;
     }
-    .modal h1{
+
+    .modal h1 {
         font-size: 2rem;
     }
-    .button-ventana{
+
+    .button-ventana {
         left: 590px;
     }
+
     /* card */
     .card__button {
         font-size: 12px;
         width: 70%;
     }
 
-    .section-primary__text{
+    .section-primary__text {
         font-size: 12px;
     }
-    
+
 }
 
 @media (max-width: 780px) {
@@ -823,11 +839,64 @@ button span {
     }
 
     /*? Section Primary */
-    .cta{
+    .cta {
         font-size: 13px;
     }
 }
 
 @media (max-width: 479px) {
-    /*! TERMINAAR */
+
+    /** Buttons */
+    /*? Footer */
+    .footer__button:hover {
+        letter-spacing: 1.5px;
+    }
+
+    /*? Ventana */
+    .button-ventana {
+        top: -20px;
+        left: 190px;
+        transform: rotate(20deg);
+    }
+
+    /** Ventana Emergente */
+    .modal {
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .modal h1 {
+        font-size: 1.8rem;
+    }
+
+    .text__ventana {
+        font-size: 12px;
+    }
+
+    .img__ventana {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /*? Ventana */
+    .button-ventana {
+        top: -20px;
+        left: 290px;
+        transform: rotate(20deg);
+    }
+
+    /** Ventana Emergente */
+    .modal h1 {
+        font-size: 1.8rem;
+    }
+
+    .text__ventana {
+        font-size: 15px;
+    }
+
+    .img__ventana {
+        width: 100%;
+    }
 }
